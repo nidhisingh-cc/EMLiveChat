@@ -11,12 +11,10 @@
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
-		
-		
-        
-        embedded_svc.addEventHandler("afterMaximize", function(data) {
-	    var show = false;
-            console.log("afterMaximize event was fired.");
+	var show = false;
+            	
+	embedded_svc.addEventHandler("afterMaximize", function(data) {
+	    console.log("afterMaximize event was fired.");
             
             if (!show) {
                 show = true;
